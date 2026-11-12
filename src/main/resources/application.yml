@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: io.github.marilurezende.ecommerce
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
